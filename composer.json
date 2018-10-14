@@ -1,0 +1,36 @@
+{
+    "name": "faganchalabizada/portmanat-laravel",
+    "description": "Portmanat Checkout for laravel",
+    "homepage": "https://www.facebook.com/FeqanCelebizade",
+    "keywords": ["portmanat", "checkout", "laravel", "portmanat.az"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Fagan Chalabizada",
+            "email": "feqan@celebizade.info"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FaganChalabizada\\Portmanat\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=5.5.9",
+        "faganchalabizada/portmanat-laravel": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FaganChalabizada\\Portmanat\\PortmanatServiceProvider"
+            ],
+
+            "aliases": {
+                "Portmanat": "FaganChalabizada\\Portmanat\\Facade\\Portmanat"
+            }
+        }
+    }
+}
