@@ -25,7 +25,7 @@ class Portmanat
         $this->s_id = config("portmanat.s_id");
         $this->key = config("portmanat.key");
         $this->o_id = request("o_id", NULL);
-        $this->transaction = request("transaction", NULL);
+        $this->tr_id = request("transaction", NULL);
         $this->amount = request("amount", NULL);
         $this->hash = request("hash", NULL);
         $this->test = request("test", NULL);
@@ -64,7 +64,7 @@ class Portmanat
      */
     public function getTransactionID()
     {
-        return $this->transaction;
+        return $this->tr_id;
     }
 
     /**
