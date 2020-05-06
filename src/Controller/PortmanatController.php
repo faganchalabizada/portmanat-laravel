@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 
 use FaganChalabizada\Portmanat\Portmanat;
-use FaganChalabizada\Wallet\WalletApi;
 
 class PortmanatController extends Controller
 {
@@ -26,17 +25,7 @@ class PortmanatController extends Controller
             if (!$Portmanat->test()) {//Test mode deactivated
                 //here you can replenish balance
 
-                $Wallet = new WalletApi();
 
-                $Wallet->createTransaction(
-                    1,
-                    1,
-                    $amount,
-                    null,
-                    $user_id,
-                    1,
-                    $transaction_id
-                );
 
             }
 
