@@ -20,7 +20,7 @@
     "prefer-stable": true,
     "require": {
         "php": ">=5.5.9",
-        "faganchalabizada/portmanat-laravel": "^4"
+        "faganchalabizada/portmanat-laravel": "^1.0"
     },
     "extra": {
         "laravel": {
